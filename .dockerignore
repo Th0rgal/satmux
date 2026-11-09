@@ -1,0 +1,7 @@
+.git
+.gitignore
+.dockerignore
+target
+docker/secrets
+*.psk
+*.part*

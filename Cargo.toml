@@ -1,0 +1,19 @@
+[package]
+name = "satmux"
+version = "0.1.0"
+edition = "2024"
+description = "TCP multiplexer and HTTP/TLS relay for high-latency links"
+license-file = "py/LICENSE"
+
+[dependencies]
+anyhow = "1"
+blake2b_simd = "1"
+flate2 = "1"
+hmac = "0.12"
+libc = "0.2"
+rand = "0.9"
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "http2"] }
+sha2 = "0.10"
+tokio = { version = "1", features = ["full"] }
+tokio-rustls = "0.26"
+webpki-roots = "1"

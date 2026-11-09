@@ -1,6 +1,8 @@
+/target/
 *.psk
 mux.psk
 __pycache__/
 *.py[cod]
 *.part*
 .DS_Store
+/docker/secrets/
